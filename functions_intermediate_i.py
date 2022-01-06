@@ -34,9 +34,6 @@ students = [
 def iterateDictionary(li):
     fn = 'first_name -'
     ln = 'last_name -'
-    '''print(type(li))
-    print(li[0])
-    print(li[0]['first_name'])'''
     i = 0
     while i < len(li):
         first = li[i]['first_name']
@@ -46,3 +43,12 @@ def iterateDictionary(li):
 
 iterateDictionary(students)
 
+# 3
+def iterateDictionary2(key_name, some_list):
+    i = 0
+    while i < len(some_list):
+        print(str(some_list[i][key_name]))
+        i += 1
+
+iterateDictionary2('first_name', students)
+iterateDictionary2('last_name', students)
