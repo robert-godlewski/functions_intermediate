@@ -52,3 +52,26 @@ def iterateDictionary2(key_name, some_list):
 
 iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
+
+# 4
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo(some_dict):
+    dict_keys = list(some_dict.keys())
+    i = 0
+    while i < len(dict_keys):
+        name = dict_keys[i]
+        group = some_dict[name]
+        num = len(group)
+        print(num, str(name).upper())
+        x = 0
+        while x < len(group):
+            print(group[x])
+            x += 1
+        print()
+        i+=1
+
+printInfo(dojo)
